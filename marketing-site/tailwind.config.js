@@ -5,8 +5,15 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  theme: {
-    extend: {},
+ theme: {
+    extend: {
+      width: {
+        landing: '1630px',
+      },
+      height: {
+        landing: '5078px',
+      },
+    },
   },
   plugins: [],
-}
+};
