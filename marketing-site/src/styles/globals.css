@@ -1,12 +1,10 @@
-/* globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @layer base {
-  h1 {
-    @apply text-4xl font-bold;
-  }
-  h2 {
-    @apply text-3xl font-semibold;
-  }
-  p {
-    @apply text-base text-muted;
+  html,
+  body {
+    @apply bg-white text-white;
   }
 }
