@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -10,19 +11,14 @@ import {
 
 function Logo() {
   return (
-    <Link href="/" className="flex items-center gap-2">
-      {/* Placeholder SVG Logo */}
-      <svg
-        width="28"
-        height="28"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="text-black"
-      >
-        <rect width="24" height="24" rx="6" fill="currentColor" />
-      </svg>
-      <span className="font-semibold text-lg">Brand</span>
+    <Link href="/" className="flex items-center">
+      <Image
+        src="/brand/black-horizontal-logo.svg"
+        alt="Brand logo"
+        width={120}
+        height={28}
+        priority
+      />
     </Link>
   )
 }
