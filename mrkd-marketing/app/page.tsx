@@ -16,26 +16,25 @@ export default function Home() {
         {/* Bottom fade */}
         <div className="absolute bottom-0 left-0 right-0 z-10 h-[25%] pointer-events-none bg-gradient-to-t from-white to-transparent" />
 
-        {/* CONTENT */}
+        {/* HERO CONTENT */}
         <div className="relative z-20">
-          {/* Headline */}
-          <div className="absolute left-[165px] top-[80px] max-w-[520px]">
+          {/* Headline + Subtext */}
+          <div className="absolute left-[165px] top-[100px] max-w-[520px]">
             <h1 className="text-4xl font-bold text-black leading-tight">
               Turn Ideas Into Scalable Experiences
             </h1>
 
-            {/* Subtext */}
             <p className="mt-4 text-base text-zinc-700 leading-relaxed">
               We design and develop modern digital products built for performance,
               clarity, and long-term growth.
             </p>
+          </div>
 
-            {/* CTA Button — now correctly attached */}
-            <div className="absolute left-[0px] top-[420] z-30">
-              <Button variant="brand" size="lg">
-                Contact us
-              </Button>
-            </div>
+          {/* CTA Button */}
+          <div className="absolute left-[165px] top-[470px] z-30">
+            <Button variant="brand" size="lg">
+              Contact us
+            </Button>
           </div>
         </div>
       </section>
@@ -45,6 +44,15 @@ export default function Home() {
         <p className="text-[28px] font-bold text-black text-center">
           Trusted by startups, brands, and growing businesses.
         </p>
+
+        {/* LOGO ROW */}
+        <div className="mt-12 flex justify-center items-center gap-10 opacity-70">
+          <img src="/brand/twitch.svg" alt="Twitch" className="h-8" />
+          <img src="/brand/facebook.svg" alt="Facebook" className="h-8" />
+          <img src="/brand/google.svg" alt="Google" className="h-8" />
+          <img src="/brand/youtube.svg" alt="YouTube" className="h-8" />
+          <img src="/brand/pinterest.svg" alt="Pinterest" className="h-8" />
+        </div>
       </section>
     </main>
   )
