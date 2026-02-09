@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import { SolutionsCarousel } from "@/components/layout/SolutionsCarousel"
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 right-0 z-10 h-[25%] pointer-events-none bg-gradient-to-t from-white to-transparent" />
 
         {/* HERO CONTENT */}
-        <div className="relative z-20">
+        <div className="relative z-20"> 
           {/* Headline + Subtext */}
           <div className="absolute left-[165px] top-[100px] max-w-[520px]">
             <h1 className="text-4xl font-bold text-black leading-tight">
@@ -54,6 +55,13 @@ export default function Home() {
           <img src="/brand/pinterest.svg" alt="Pinterest" className="h-8" />
         </div>
       </section>
+      <section>
+        <p className="mt-20 text-base mx-auto text-[30px] font-bold text-black text-center">
+          Solutions that {""}
+          <span className="text-[#FA3607]"> MRKD </span>{""} your digital growth.
+        </p>
+      </section>
+      <SolutionsCarousel />
     </main>
   )
 }
