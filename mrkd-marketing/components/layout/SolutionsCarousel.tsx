@@ -1,18 +1,8 @@
 "use client"
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel"
-import { Card, CardContent } from "@/components/ui/card"
-import {
-  Laptop,
-  Smartphone,
-  Monitor,
-  Settings,
-  Cpu,
-} from "lucide-react"
+import {Carousel, CarouselContent, CarouselItem,} from "@/components/ui/Carousel"
+import { Card, CardContent } from "@/components/ui/Card"
+import {Laptop, Smartphone, Monitor, Settings, Cpu, } from "lucide-react"
 
 const solutions = [
   {
@@ -49,28 +39,34 @@ const solutions = [
 
 export function SolutionsCarousel() {
   return (
-    <div className="mt-16">
+    <div className="mt-16 flex justify-center">
+      <div className="w-full max-w-[1240px]">
+
       <Carousel opts={{ align: "start" }}>
-        <CarouselContent className="-ml-[1px]">
+        <CarouselContent className="gap-6">
           {solutions.map((item, index) => (
             <CarouselItem
               key={index}
-              className="basis-full sm:basis-1/2 lg:basis-1/3 pl-[1px]">
-            <Card className="bg-[#FA3607] border-none rounded-2xl w-[388px] h-[522px]">
+              className="basis-[388px] shrink-0">
+
+              <Card className="bg-[#FA3607] border-none rounded-2xl w-[388px] h-[522px]">
                 <CardContent className="relative h-full text-white">
-                    <item.icon className="absolute left-[32px] top-[64px] w-[94px] h-[80px]" />
-                    <h3 className="absolute left-[32px] top-[214px] text-[28px] font-medium leading-tight max-w-[388px]">
+                  <item.icon className="absolute left-[32px] top-[64px] w-[94px] h-[80px]"/>
+
+                  <h3 className="absolute left-[32px] top-[214px] text-[28px] font-medium leading-tight max-w-[300px]">
                     {item.title}
-                    </h3>
-                    <p className="absolute left-[32px] top-[280px] text-[18px] leading-relaxed opacity-90 max-w-[300px]">
+                  </h3>
+                  <p className="absolute left-[32px] top-[280px] text-[18px] leading-relaxed opacity-90 max-w-[300px]">
                     {item.description}
-                    </p>
+                  </p>
                 </CardContent>
-            </Card>
+              </Card>
             </CarouselItem>
           ))}
+          
         </CarouselContent>
       </Carousel>
+      </div>
     </div>
   )
 }
