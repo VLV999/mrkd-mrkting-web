@@ -33,7 +33,7 @@ export default function Home() {
 
           {/* CTA Button */}
           <div className="absolute left-[165px] top-[470px] z-30">
-            <Button variant="brand" size="lg">
+            <Button variant="brand" className="w-[164px]" size="lg">
               Contact us
             </Button>
           </div>
@@ -62,6 +62,82 @@ export default function Home() {
         </p>
       </section>
       <SolutionsCarousel />
+      
+        {/* READMORE Button */}
+          <div className="mt-12 flex justify-center">
+            <Button variant="brand" className="w-[229px]" size="lg">
+              Read More
+            </Button>
+          </div>
+
+          <section className="bg-white py-24">
+          <div className="max-w-[1200px] mx-auto px-6 space-y-32">
+
+        {/* ROW 1 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            {/* Image */}
+            <img
+              src="/about/about-1.jpg"
+              alt="Team working"
+              className="w-full rounded-br-[50px] object-cover"
+            />
+
+        {/* Text */}
+            <div>
+              <p className="text-sm tracking-wide uppercase text-zinc-500">
+                About Us
+              </p>
+
+              <h2 className="mt-3 text-[40px] font-bold leading-tight">
+                Driven by innovation.
+                <br />
+                Focused on results.
+              </h2>
+
+              <p className="mt-6 text-[16px] text-zinc-600 leading-relaxed max-w-[520px]">
+                MRKD Inc. focuses on web and mobile application design and development
+                that is responsive to growth and performance. Whether it is the smooth
+                shifts of a site or the strength of software platforms, we collaborate
+                with our customers throughout the process of bringing in dreams with
+                creative thinking and technical skills.
+              </p>
+            </div>
+          </div>
+
+        {/* ROW 2 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        {/* Text */}
+          <div>
+            <p className="text-sm tracking-wide uppercase text-zinc-500">
+            Who Are We
+            </p>
+
+          <h2 className="mt-3 text-[40px] font-bold leading-tight">
+            Innovators.
+            <br />
+            Creators.
+            <br />
+            Problem-solvers.
+          </h2>
+
+          <p className="mt-6 text-[16px] text-zinc-600 leading-relaxed max-w-[520px]">
+            A team of innovators and creators shaping the digital world. We combine
+            creativity, technology, and strategy in order to transform ideas into
+            effective digital experiences.
+          </p>
+        </div>
+
+        {/* Image */}
+        <img
+          src="/about/about-2.jpg"
+          alt="Team meeting"
+          className="w-full rounded-tl-[50px] object-cover"
+        />
+      </div>
+
+    </div>
+  </section>
+
     </main>
   )
 }
