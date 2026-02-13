@@ -1,5 +1,8 @@
 import { Button } from "@/components/ui/Button"
-import { SolutionsCarousel } from "@/components/layout/SolutionsCarousel"
+import { SolutionsCarousel } from "@/components/SolutionsCarousel/SolutionsCarousel"
+import { SolutionsLayout } from "@/components/SolutionsCarousel/SolutionsCarouselLayout"
+import BrandRow from "@/components/BrandRow/BrandRow"
+
 
 export default function Home() {
   return (
@@ -48,13 +51,7 @@ export default function Home() {
         </p>
 
         {/* LOGO ROW */}
-        <div className="mt-12 flex justify-center items-center gap-10 opacity-70">
-          <img src="/brand/twitch.svg" alt="Twitch" className="h-8" />
-          <img src="/brand/facebook.svg" alt="Facebook" className="h-8" />
-          <img src="/brand/google.svg" alt="Google" className="h-8" />
-          <img src="/brand/youtube.svg" alt="YouTube" className="h-8" />
-          <img src="/brand/pinterest.svg" alt="Pinterest" className="h-8" />
-        </div>
+      <BrandRow />
       </section>
       <section>
         <p className="mt-20 text-base mx-auto text-[30px] font-bold text-black text-center">
