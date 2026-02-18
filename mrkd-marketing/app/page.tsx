@@ -53,6 +53,7 @@ export default function Home() {
         {/* LOGO ROW */}
       <BrandRow />
       </section>
+      
       <section>
         <p className="mt-20 text-base mx-auto text-[30px] font-bold text-black text-center">
           Solutions that {""}
@@ -132,6 +133,15 @@ export default function Home() {
           alt="Team meeting"
           className="w-full rounded-tl-[50px] object-cover"
         />
+      </div>
+      <div>
+        <section>
+          <p className="mt-32 text-base mx-auto text-[30px] font-bold text-black text-center">
+            Technologies that {""}
+            <span className="text-[#FA3607]"> MRKD </span>{""} our solutions.
+          </p>
+        </section>
+
       </div>
 
     </div>
