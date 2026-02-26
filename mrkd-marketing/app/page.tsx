@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/Button"
 import { SolutionsCarousel } from "@/components/SolutionsCarousel/SolutionsCarousel"
 import { SolutionsLayout } from "@/components/SolutionsCarousel/SolutionsCarouselLayout"
 import BrandRow from "@/components/BrandRow/BrandRow"
+import GetInTouch from "@/components/GetInTouch/GetInTouch"
+import Footer from "@/components/Footer/FooterLayout"
 
 
 export default function Home() {
@@ -142,6 +144,16 @@ export default function Home() {
           </p>
         </section>
 
+      <div>
+        <section>
+          <GetInTouch />
+        </section>
+      </div>
+      <div>
+        <section>
+          <Footer />
+        </section>
+      </div>
       </div>
 
     </div>
