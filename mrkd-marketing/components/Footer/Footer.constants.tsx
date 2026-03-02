@@ -15,6 +15,8 @@ export const FOOTER_SOCIALS = [
 ] as const
 
 export const FOOTER_LOGO = {
-  src: "/brand/black-horizontal-logo.svg",
+  src: "/brand/Black - Horizontal Logo.svg",
   alt: "MRKD Logo",
+  width: 130,
+  height: 40,
 }

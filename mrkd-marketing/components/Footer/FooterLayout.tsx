@@ -5,19 +5,18 @@ import { FOOTER_LINKS, FOOTER_SOCIALS, FOOTER_LOGO } from "./Footer.constants"
 
 export default function Footer() {
   return (
-    <footer className="border-t bg-white">
-      <div className="max-w-[1240px] mx-auto px-6 py-12">
+    <footer className="border-t bg-[#F3F2F2]">
+      <div className="max-w-[1630px] mx-auto ">
 
         <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-8">
 
           {/* Left */}
-          <div className="flex flex-col items-center md:items-start gap-2">
+          <div className="p-4 flex flex-col items-center md:items-start gap-2">
             <img
               src={FOOTER_LOGO.src}
               alt={FOOTER_LOGO.alt}
-              className="h-8 object-contain"
+              className="w-[182px] h-[61px] object-contain"
             />
-            <p className="text-sm text-zinc-500">Make your mark.</p>
           </div>
 
           {/* Center */}
