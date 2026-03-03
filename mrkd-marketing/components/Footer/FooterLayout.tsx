@@ -6,7 +6,7 @@ import { FOOTER_LINKS, FOOTER_SOCIALS, FOOTER_LOGO } from "./Footer.constants"
 export default function Footer() {
   return (
     <footer className="border-t bg-[#F3F2F2]">
-      <div className="max-w-[1630px] mx-auto ">
+      <div className="max-w-[1630px] mx-auto px-8">
 
         <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-8">
 
@@ -53,12 +53,13 @@ export default function Footer() {
           </div>
 
         </div>
+          {/* Divider */}
+          <div className="max-w-[1325px] mx-auto h-px bg-zinc-300 mt-12" />
 
-        {/* Copyright */}
-        <p className="mt-10 text-center text-xs text-zinc-400">
-          Copyright © MRKD Inc. {new Date().getFullYear()}
-        </p>
-
+            {/* Copyright */}
+            <p className="text-center text-xs text-zinc-500 py-6">
+                Copyright © MRKD Inc. {new Date().getFullYear()}
+            </p>
       </div>
     </footer>
   )
