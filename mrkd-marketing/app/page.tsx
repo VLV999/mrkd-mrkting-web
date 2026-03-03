@@ -21,7 +21,7 @@ export default function Home() {
 
           <div className="relative z-20 flex justify-center">
             <div className="w-full max-w-[1240px] relative">
-              <div className="absolute left-[165px] top-[100px] max-w-[520px]">
+              <div className="flex-col mt-25 ml-40 left-[165px] top-[100px] max-w-[520px]">
                 <h1 className="text-4xl font-bold text-black leading-tight">
                   Turn Ideas Into Scalable Experiences
                 </h1>
@@ -32,7 +32,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="flex absolute left-[165px] top-[470px] z-30">
+              <div className="flex mt-55 ml-40 left-[165px] top-[470px] z-30">
                 <Button variant="brand" className="w-[164px]" size="lg">
                   Contact us
                 </Button>
@@ -43,7 +43,7 @@ export default function Home() {
 
         {/* BRAND ROW */}
         <section className="bg-white py-24">
-          <p className="text-[28px] font-bold text-black text-center">
+          <p className="fleex justify-center text-[28px] font-bold text-black text-center">
             Trusted by startups, brands, and growing businesses.
           </p>
           <BrandRow />
