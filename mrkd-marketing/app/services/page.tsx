@@ -30,7 +30,7 @@ export default function ServicesPage() {
                     Contact us
                   </Button>
 
-                  <Button variant="outline" size="lg">
+                  <Button variant="outlineBlack" size="lg">
                     View Our Work
                   </Button>
                 </div>
@@ -39,9 +39,9 @@ export default function ServicesPage() {
               {/* RIGHT SIDE IMAGE */}
               <div>
                 <img
-                  src="/services/hero.jpg"
+                  src="/services/services.jpg"
                   alt="Services"
-                  className="w-full rounded-lg object-cover"
+                  className="w-full rounded-tl-2xl object-cover"
                 />
               </div>
 

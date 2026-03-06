@@ -14,6 +14,9 @@ const buttonVariants = cva(
 
         brand:
           "bg-[#FA3607] text-white hover:bg-[#E33206] rounded-tr-2xl",
+
+        outlineBlack:
+          "border border-black text-black bg-transparent hover:bg-black hover:text-white rounded-tr-2xl",
       },
       size: {
         default: "h-9 px-4",
