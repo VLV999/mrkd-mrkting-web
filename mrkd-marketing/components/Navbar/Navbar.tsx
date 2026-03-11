@@ -38,14 +38,7 @@ export default function Navbar() {
         ))}
       </div>
 
-      {/* CTA Button */}
-      <div className="flex justify-end">
-        <Link href="/contact" passHref>
-          <Button asChild variant="brand" size="lg">
-            <a>Get in Touch</a>
-          </Button>
-        </Link>
-      </div>
+
     </NavbarLayout>
   )
 }
