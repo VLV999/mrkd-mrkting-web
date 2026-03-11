@@ -1,56 +1,51 @@
 "use client"
 
 import Link from "next/link"
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-} from "@/components/ui/Navigation-menu"
-
+import { usePathname } from "next/navigation"
+import { Button } from "@/components/ui/button"
 import { NavbarLayout } from "./NavbarLayout"
 import { NAV_ITEMS, NAVBAR_LOGO } from "./Navbar.const"
 
 export default function Navbar() {
+  const pathname = usePathname()
+
   return (
     <NavbarLayout>
-
-      {/* Left: Logo */}
+      {/* Logo */}
       <div className="flex justify-start">
-        <Link href="/" className="flex items-center">
+        <Link href="/">
           <img
             src={NAVBAR_LOGO.src}
             alt={NAVBAR_LOGO.alt}
             width={NAVBAR_LOGO.width}
             height={NAVBAR_LOGO.height}
-            className="object-contain"
           />
         </Link>
       </div>
 
-      {/* Center: Navigation */}
-      <div className="flex justify-center">
-        <NavigationMenu>
-          <NavigationMenuList className="gap-6">
-            {NAV_ITEMS.map((item) => (
-              <NavigationMenuItem key={item.label}>
-                <NavigationMenuLink asChild>
-                  <Link
-                    href={item.href}
-                    className="text-[16px] font-medium text-black hover:text-zinc-600 transition"
-                  >
-                    {item.label}
-                  </Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-            ))}
-          </NavigationMenuList>
-        </NavigationMenu>
+      {/* Navigation */}
+      <div className="hidden md:flex justify-center gap-6">
+        {NAV_ITEMS.map((item) => (
+          <Link
+            key={item.label}
+            href={item.href}
+            className={`text-[16px] font-medium transition ${
+              pathname === item.href ? "text-black font-bold" : "text-zinc-600 hover:text-black"
+            }`}
+          >
+            {item.label}
+          </Link>
+        ))}
       </div>
 
-      {/* Right: Spacer */}
-      <div />
-
+      {/* CTA Button */}
+      <div className="flex justify-end">
+        <Link href="/contact" passHref>
+          <Button asChild variant="brand" size="lg">
+            <a>Get in Touch</a>
+          </Button>
+        </Link>
+      </div>
     </NavbarLayout>
   )
 }

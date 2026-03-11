@@ -1,12 +1,12 @@
+import { Button } from "@/components/ui/button"
 import Footer from "@/components/Footer/FooterLayout"
-import { Button } from "@/components/ui/Button"
 
 export default function ContactPage() {
   return (
     <>
       <main className="min-h-screen">
 
-        {/* FORM SECTION (Gray Background Only Here) */}
+        {/* FORM SECTION */}
         <section className="bg-[#F3F2F2] py-32">
           <div className="max-w-[1630px] mx-auto px-6">
 
@@ -15,10 +15,8 @@ export default function ContactPage() {
               {/* LEFT SIDE */}
               <div>
                 <h1 className="text-[42px] font-bold leading-tight">
-                  Let’s explore how{" "}
-                  <span className="text-[#FA3607]">MRKD</span> can bring your vision to life.
+                  Let’s explore how <span className="text-[#FA3607]">MRKD</span> can bring your vision to life.
                 </h1>
-
                 <p className="mt-6 font-semibold leading-relaxed max-w-[520px]">
                   We’ll start by understanding your goals, then show you what’s
                   possible through thoughtful design, seamless development,
@@ -26,9 +24,8 @@ export default function ContactPage() {
                 </p>
               </div>
 
-              {/* RIGHT SIDE (FORM) */}
+              {/* RIGHT SIDE FORM */}
               <div className="border-l border-zinc-400 pl-16">
-
                 <form className="space-y-10">
 
                   {/* First + Last Name */}
@@ -71,12 +68,11 @@ export default function ContactPage() {
                   {/* Submit Button */}
                   <div className="pt-6 justify-center flex">
                     <Button variant="brand" className="w-[164px]" size="lg">
-                    Submit
+                      Submit
                     </Button>
                   </div>
 
                 </form>
-
               </div>
 
             </div>
@@ -85,9 +81,6 @@ export default function ContactPage() {
         </section>
 
       </main>
-
-      {/* Space Between Section and Footer */}
-      <div className="h-24" />
 
       <Footer />
     </>

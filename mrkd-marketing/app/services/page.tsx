@@ -1,4 +1,5 @@
-import { Button } from "@/components/ui/Button"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 import Footer from "@/components/Footer/FooterLayout"
 import { SolutionsCarousel } from "@/components/SolutionsCarousel/SolutionsCarousel"
 
@@ -12,27 +13,23 @@ export default function ServicesPage() {
           <div className="max-w-[1630px] mx-auto px-6">
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-
               {/* LEFT SIDE */}
               <div>
                 <h1 className="text-[42px] font-bold leading-tight">
-                  Solutions that{" "}
-                  <span className="text-[#FA3607]">MRKD</span> your digital growth
+                  Solutions that <span className="text-[#FA3607]">MRKD</span> your digital growth
                 </h1>
-
                 <p className="mt-6 text-zinc-700 max-w-[520px] leading-relaxed">
                   We design, build, and optimize digital products that help
                   businesses scale with confidence.
                 </p>
 
                 <div className="flex gap-6 mt-10">
-                  <Button variant="brand" size="lg">
-                    Contact us
-                  </Button>
-
-                  <Button variant="outlineBlack" size="lg">
-                    View Our Work
-                  </Button>
+                  <Link href="/contact">
+                    <Button variant="brand" size="lg">Contact us</Button>
+                  </Link>
+                  <Link href="/works">
+                    <Button variant="outlineBlack" size="lg">View Our Work</Button>
+                  </Link>
                 </div>
               </div>
 
@@ -44,7 +41,6 @@ export default function ServicesPage() {
                   className="w-full rounded-tl-2xl object-cover"
                 />
               </div>
-
             </div>
 
           </div>

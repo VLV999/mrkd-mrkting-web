@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/Button"
+import { Button } from "@/components/ui/button"
 import { SolutionsCarousel } from "@/components/SolutionsCarousel/SolutionsCarousel"
 import BrandRow from "@/components/BrandRow/BrandRow"
 import GetInTouch from "@/components/GetInTouch/GetInTouch"
