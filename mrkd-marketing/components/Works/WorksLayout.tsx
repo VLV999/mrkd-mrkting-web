@@ -8,10 +8,11 @@ export default function WorksGrid() {
         <div
           key={index}
           className={cn(
-            "bg-white flex items-center justify-center text-xl font-semibold text-zinc-800 shadow-sm",
+            "bg-white flex items-center justify-center text-xl font-semibold text-zinc-800 shadow-sm bg-cover bg-center",
             project.className,
             project.radius
           )}
+          style={{ backgroundImage: `url(${project.image})` }}
         >
           {project.title}
         </div>
