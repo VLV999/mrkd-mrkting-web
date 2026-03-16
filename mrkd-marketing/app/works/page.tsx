@@ -4,7 +4,10 @@ import WorksGrid from "@/components/Works/WorksLayout"
 export default function WorksPage() {
   return (
     <>
-      <main className="min-h-screen bg-white py-24">
+      <main
+        className="min-h-screen bg-cover bg-center py-24"
+        style={{ backgroundImage: "url(${project.image})" }}
+      >
         <div className="max-w-[1630px] mx-auto px-6">
 
           {/* HEADER */}

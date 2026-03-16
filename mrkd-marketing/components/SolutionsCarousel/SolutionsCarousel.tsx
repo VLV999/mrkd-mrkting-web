@@ -1,7 +1,7 @@
 "use client"
 
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel"
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/Card"
 
 import { SOLUTIONS } from "./SolutionsCarousel.const"
 
