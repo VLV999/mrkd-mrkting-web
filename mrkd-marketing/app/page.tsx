@@ -3,6 +3,7 @@ import { SolutionsCarousel } from "@/components/SolutionsCarousel/SolutionsCarou
 import BrandRow from "@/components/BrandRow/BrandRow"
 import GetInTouch from "@/components/GetInTouch/GetInTouch"
 import Footer from "@/components/Footer/FooterLayout"
+import TechSection from "@/components/Techstack/Techsection"
 
 export default function Home() {
   return (
@@ -138,6 +139,10 @@ export default function Home() {
             Technologies that{" "}
             <span className="text-[#FA3607]">MRKD</span> our solutions.
           </p>
+          <TechSection />
+          <Button variant="brand" className="w-[229px] mx-auto block" size="lg">
+            See Our Work
+          </Button>
         </section>
 
         {/* GET IN TOUCH */}

@@ -3,7 +3,6 @@ import { Facebook, Instagram, Linkedin } from "lucide-react"
 export const FOOTER_LINKS = [
   "Home",
   "Works",
-  "Techstacks",
   "Services",
   "Contact",
 ] as const

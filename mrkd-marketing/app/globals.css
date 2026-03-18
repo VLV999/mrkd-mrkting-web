@@ -126,3 +126,21 @@
   scroll-behavior: smooth;
 }
 }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee var(--duration, 25s) linear infinite;
+}
+  
+/* reverse direction */
+.animate-marquee-reverse {
+  animation: marquee var(--duration, 25s) linear infinite reverse;
+}
