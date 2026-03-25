@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/Button"
 import Footer from "@/components/Footer/FooterLayout"
 import { SolutionsCarousel } from "@/components/SolutionsCarousel/SolutionsCarousel"
+import ServicesLayout from "@/components/Services/ServicesLayout" // ✅ added
 
 export default function ServicesPage() {
   return (
@@ -46,10 +47,24 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        {/* CAROUSEL SECTION */}
-        <section className="py-28 bg-white">
+
+        {/* SERVICES GRID (NEW) */}
+        <section className="py-28 bg-[#2B2B2B]">
           <div className="max-w-[1630px] mx-auto px-6">
-            <SolutionsCarousel />
+
+            {/* HEADER */}
+            <div className="text-center max-w-[600px] mx-auto">
+              <h2 className="text-[36px] font-bold text-white">
+                Services We <span className="text-[#FA3607]">Offer</span>
+              </h2>
+              <p className="mt-4 text-zinc-300 text-sm leading-relaxed">
+                We provide a wide range of digital solutions to help your business grow and scale.
+              </p>
+            </div>
+
+            {/* GRID */}
+            <ServicesLayout />
+
           </div>
         </section>
 
