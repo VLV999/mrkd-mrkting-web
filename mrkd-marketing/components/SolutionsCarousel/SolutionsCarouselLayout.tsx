@@ -6,7 +6,7 @@ type Props = {
 
 export function SolutionsLayout({ children }: Props) {
   return (
-    <section className="mt-16 flex justify-center">
+    <section className="mt-16 flex w-full justify-center">
       <div className="w-full max-w-[1240px]">
         {children}
       </div>

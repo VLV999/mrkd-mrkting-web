@@ -1,5 +1,5 @@
 "use client"
-
+import ThemeToggle from "@/components/ThemeToggle/ThemeToggle"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/Button"
@@ -23,6 +23,7 @@ export default function Navbar() {
         </Link>
       </div>
 
+
       {/* Navigation */}
       <div className="hidden md:flex justify-center gap-6">
         {NAV_ITEMS.map((item) => (
@@ -35,9 +36,14 @@ export default function Navbar() {
           >
             {item.label}
           </Link>
+          
         ))}
       </div>
-
+      
+      {/* Theme Toggle */}
+      <div className="flex justify-end">
+        <ThemeToggle />
+      </div>
 
     </NavbarLayout>
   )

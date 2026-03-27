@@ -7,7 +7,7 @@ export default function ContactPage() {
       <main className="min-h-screen">
 
         {/* FORM SECTION */}
-        <section className="bg-[#F3F2F2] py-32">
+        <section className="bg-[#ffffff] py-32">
           <div className="max-w-[1630px] mx-auto px-6">
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-start">
